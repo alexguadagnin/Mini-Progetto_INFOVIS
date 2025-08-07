@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini-progetto INFOVIS</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    /* Tabella in alto a destra */
+    #data-table {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255,255,255,0.9);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 12px;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      font-size: 13px;
+      color: #2c3e50;
+      max-width: 280px;
+      overflow: auto;
+    }
+    #data-table table {
+      border-collapse: separate;
+      width: 100%;
+      border-spacing: 0;
+    }
+    #data-table th {
+      background: #ecf0f1;
+      font-weight: bold;
+      padding: 6px 8px;
+      border-bottom: 2px solid #bdc3c7;
+      text-align: center;
+    }
+    #data-table td {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 6px 8px;
+      text-align: center;
+    }
+    #data-table tbody tr:nth-child(even) {
+      background: #fafafa;
+    }
+    #data-table tbody tr:hover {
+      background: #f1f1f1;
+    }
+
+
+    body { margin: 0; }
+
+    svg { display: block; background: #EBEBEB; }
+
+    .omino-body { stroke-width: 2px; }
+    .coord-label {
+    	font-family: Arial, sans-serif;
+    	font-weight: bold;
+    	fill: currentColor; /* eredita il colore inline */
+    	}
+
+  </style>
+</head>
+<body>
+  <svg id="canvas"></svg>
+  <div id="data-table"></div>
+  <script src="script.js"></script>
+</body>
+</html>
