@@ -10,5 +10,5 @@ Visualizzazione interattiva di 10 omini stilizzati, ciascuno rappresentante un d
 2) Premendo *'n'*: l'omino con id *i* prende il data-case dell'omino con id *i+1* (shift circolare)
 
 ## Tecnologie:
-* D3.js v7
+* D3.js 
 * HTML/CSS/JS
